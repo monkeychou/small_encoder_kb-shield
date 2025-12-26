@@ -1,4 +1,4 @@
-name: small_encoder_kb
+name: small-encoder_kb
 description: Custom small encoder keyboard shield for ZMK
 build:
   settings:
