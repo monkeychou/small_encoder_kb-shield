@@ -1,11 +1,18 @@
 manifest:
   remotes:
-    - name: remote-name
-      url-base: https://github.com/remote-name
+    - name: zmk
+      url-base: https://github.com/zmkfirmware
+      - name: monkeychou
+      url-base: https://github.com/monkeychou
+      
   projects:
     # Together with the above defined remote, this refers to a module located at
     # https://github.com/remote-name/repository-name
-    - name: repository-name
-      remote: remote-name
+    - name: zmk
+      remote: zmk
       # This points to a west manifest file in the remote module for further imports
-      import: west.yml
+      import: app/west.yml
+    - name: small_encoder_kb   # 新增 module
+      remote: monkeychou
+      revision: main
+      url: https://github.com/monkeychou/small_encoder_kb-shield
