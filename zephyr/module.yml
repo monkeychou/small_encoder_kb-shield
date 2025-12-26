@@ -1,4 +1,4 @@
-name: small_encoder_kb
+name: zmk-keyboard-small-encoder_kb
 build:
   # List your dependencies
   depends:
