@@ -16,3 +16,6 @@ manifest:
       remote: monkeychou
       revision: main
       url: https://github.com/monkeychou/small_encoder_kb-shield
+
+self:
+    path: config
